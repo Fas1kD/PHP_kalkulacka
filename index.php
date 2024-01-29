@@ -6,7 +6,9 @@
 </head>
 <body>
     <h1>Tohle je kalukacla v php</h1>
-    <form>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+        <input type="text" name ="cislo1" placeholder="Zde zadejte první číslo">
+
 
 
 
@@ -17,4 +19,3 @@
     ?>
 </body>
 </html>
-
