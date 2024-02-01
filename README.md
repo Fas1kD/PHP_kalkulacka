@@ -2,4 +2,4 @@
 Vytvoření jedoduché "PHP kalkulačky" s pomocí html 
 
 Softaware: Visual Studio Code
-W3 Schools
+, W3 Schools
