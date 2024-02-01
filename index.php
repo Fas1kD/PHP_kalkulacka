@@ -53,6 +53,18 @@
             case "-":
                 return $cislo1 - $cislo2;
 
+            //Operac krát
+            case "*":
+                return $cislo2 * $cislo1;
+
+            //Operace děleno
+            case "/":
+                return $cislo1 / $cislo2;
+
+            //Na druhou
+            case "**":
+                return $cislo1 ** $cislo2;
+
             }
 
     }
@@ -90,3 +102,4 @@
     ?>
 </body>
 </html>
+
