@@ -5,10 +5,11 @@
     <title>KalkulackaPHP</title>
 </head>
 <body>
+    
     <!-- Nadpis -->
 
     <h1>PHP KALKULAČKA</h1>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  <!--PHP? FORMULÁŘ-->
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  <!--PHP? FORMULÁŘ (CHAT BOT)-->
 
          <!-- Input pro první číslo -->
 
@@ -34,6 +35,47 @@
     </form>     <!--Konec Formuláře-->
 
 
+    <!-- PHP funkce-->
+
+    <?php
+    function spocitej($cislo1, $cislo2, $operace){
+
+        //Operace v PHP + - * / ** (nadruhou)
+
+        //Vyhází ze zvoleni operaca ("case" = "if")
+        switch ($operace) { 
+
+            //Operace plus
+            case "+":
+                return $cislo1 + $cislo2;
+                
+            //Operace minus
+            case "-":
+                return $cislo1 - $cislo2;
+
+            }
+
+    }
+
+
+
+    // Kontola inputu přepis (CHAT GPT)
+    if(isset($_POST['submit'])) {
+        $cislo1 = $_POST['cislo1'];
+        $cislo2 = $_POST['cislo2'];
+        $operace = $_POST['operace'];
+
+        // Kontrola inputu a výpočet
+        if(is_numeric($cislo1) && is_numeric($cislo2)) {
+
+            // Počítání kalkulačky
+            $result = spocitej($cislo1, $cislo2, $operace);
+            echo "<p>Velký počítání: $cislo1 $operace $cislo2 = $result</p> <br> <p style=\"color: red;\">Výsledek: $result</p>"; //Výsledek (output)
+        }
+    }
+
+    ?>
+
 
 
 
@@ -48,4 +90,3 @@
     ?>
 </body>
 </html>
-
