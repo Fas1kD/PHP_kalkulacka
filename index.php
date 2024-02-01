@@ -88,18 +88,6 @@
 
     ?>
 
-
-
-
-
-
-
-
-    <?php
-    $txt = "<p style=\"color: blue;\">  Jsme samozvaní \"Vikingove\" ze severu </p>";
-    echo "<h9> AHOJ </h9> <br> $txt! ";
-    var_dump($txt)
-    ?>
 </body>
 </html>
 
