@@ -6,3 +6,5 @@ Softaware: Visual Studio Code
 , InfinityFree
 
 Odkaz na stránku: http://dominikphp.infinityfreeapp.com/index.php
+
+(podrobněžší informace ve složce "Informace")
