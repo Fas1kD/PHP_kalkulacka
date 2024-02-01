@@ -1,5 +1,5 @@
 # PHP_kalkulacka
-Vytvoření jedoduché "PHP kalkulačky" s pomocí php a html 
+Vytvoření jednoduché "PHP kalkulačky" s pomocí php a html 
 
 Softaware: Visual Studio Code
 , W3 Schools
