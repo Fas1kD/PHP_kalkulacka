@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--Nastavení přiblížení a oddálení-->
@@ -38,11 +38,12 @@
     <!-- PHP funkce-->
 
     <?php
-    function spocitej($cislo1, $cislo2, $operace){
+    function spocitej($cislo1, $cislo2, $operace){          //Funkce, která využívá 
 
         //Operace v PHP + - * / ** (na několikátou, index nahoře)
 
         //Vyhází ze zvoleni operaca ("case" = "if")
+        // return - vrací hodnotu výpočtu čísla1 a čísla2
         switch ($operace) { 
 
             //Operace plus
@@ -72,21 +73,24 @@
 
 
     // Kontola inputu přepis (CHAT GPT)
-    if(isset($_POST['submit'])) {
+    if(isset($_POST['submit'])) {    //Systémová proměná POST (něco jako string), POST = pošta, posílá operace čísla atd...
         $cislo1 = $_POST['cislo1'];
         $cislo2 = $_POST['cislo2'];
         $operace = $_POST['operace'];
 
         // Kontrola inputu a výpočet
-        if(is_numeric($cislo1) && is_numeric($cislo2)) {
+        // is_numeric - ověří zda se jedná o číslo
+        if(is_numeric($cislo1) && is_numeric($cislo2)) {    
 
             // Počítání kalkulačky
             $result = spocitej($cislo1, $cislo2, $operace);
-            echo "<p>Velký počítání: $cislo1 $operace $cislo2 = $result</p> <br> <p style=\"color: red;\">Výsledek: $result</p>"; //Výsledek (output)
+            echo "<p>Velký počítání: $cislo1 $operace $cislo2 = $result</p> <br> <p style=\"color: red;\">Výsledek: $result</p>"; //Výsledek (output), vypíše výpočet a následně i výsledek
         }
     }
 
     ?>
+
+          <!-- http://dominikphp.infinityfreeapp.com/index.php - odkaz na stránku -->
 
 </body>
 </html>
