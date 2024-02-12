@@ -1,8 +1,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KalkulackaPHP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <!--Nastavení přiblížení a oddálení-->
+    <title>KalkulackaPHP</title>     <!--Nadpis-->
 </head>
 <body>
     
@@ -22,7 +22,7 @@
             <option value = "-">-</option>
             <option value = "*">*</option>
             <option value = "/">/</option>
-            <option value = "**">2</option>     <!-- na druhou -->
+            <option value = "**">2</option>     <!-- na několikátou (index nahoře) -->
         </select>
 
         <!-- Input pro druhé číslo -->
@@ -31,8 +31,8 @@
 
         <!-- Tlačítko pro počítání -->
 
-        <input type = "submit" name ="submit" value ="Spočítej">
-    </form>     <!--Konec Formuláře-->
+        <input type = "submit" name ="submit" value ="Spočítej">   <!--Tlačítko pro spočítání-->
+    </form>     <!--Konec Formulářů-->
 
 
     <!-- PHP funkce-->
@@ -40,7 +40,7 @@
     <?php
     function spocitej($cislo1, $cislo2, $operace){
 
-        //Operace v PHP + - * / ** (nadruhou)
+        //Operace v PHP + - * / ** (na několikátou, index nahoře)
 
         //Vyhází ze zvoleni operaca ("case" = "if")
         switch ($operace) { 
@@ -61,7 +61,7 @@
             case "/":
                 return $cislo1 / $cislo2;
 
-            //Na druhou
+            //Na několikátou, index nahoře
             case "**":
                 return $cislo1 ** $cislo2;
 
