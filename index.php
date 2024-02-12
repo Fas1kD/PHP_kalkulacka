@@ -38,7 +38,7 @@
     <!-- PHP funkce-->
 
     <?php
-    function spocitej($cislo1, $cislo2, $operace){          //Funkce, která využívá 
+    function spocitej($cislo1, $cislo2, $operace){          //Funkce, která využívá číslo1, číslo2 a zvolenou operaci
 
         //Operace v PHP + - * / ** (na několikátou, index nahoře)
 
