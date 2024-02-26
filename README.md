@@ -1,6 +1,6 @@
 # PHP_kalkulacka
-## Vytvoření jednoduché "PHP kalkulačky" s pomocí php a html 
 ## Dominik Fasora
+## Vytvoření jednoduché "PHP kalkulačky" s pomocí php a html 
 
 Softaware: Visual Studio Code
 , W3 Schools
