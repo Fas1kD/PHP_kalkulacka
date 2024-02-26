@@ -1,5 +1,5 @@
 # PHP_kalkulacka
-## Dominik Fasora
+## 58836 Dominik
 ## Vytvoření jednoduché "PHP kalkulačky" s pomocí php a html 
 
 Softaware: Visual Studio Code
