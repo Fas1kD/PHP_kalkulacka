@@ -1,4 +1,4 @@
-# PHP_kalkulacka
+# PHP_KALKULAČKA
 ## 5 Dominik
 ## Vytvoření jednoduché "PHP kalkulačky" s pomocí php a html 
 
